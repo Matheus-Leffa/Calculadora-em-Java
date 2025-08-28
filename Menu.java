@@ -5,15 +5,26 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+
         boolean continuar = true;
-        
         while (continuar) {
             System.out.println("""
                     Calculadora Simples:
                     Digite o primeiro número:""");
-            double n1 = teclado.nextDouble();
+            double n1, n2;
+            while (!teclado.hasNextDouble()){
+                System.out.println("Entrada inválida! Digite um número: ");
+                teclado.next();
+            }
+            n1 = teclado.nextDouble();
+
             System.out.println("Digite o segundo número: ");
-            double n2 = teclado.nextDouble();
+            while (!teclado.hasNextDouble()){
+                System.out.println("Entrada inválida! Digite um segundo número: ");
+                teclado.next();
+            }
+            n2 = teclado.nextDouble();
+
             System.out.println("""
                     Escolha qual operação deseja fazer:
                     1 - Adição
