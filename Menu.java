@@ -25,6 +25,10 @@ public class Menu {
                 Double resultSoma = operacoes.somar(n1, n2);
                     System.out.println("A soma entre " + n1 + " e " + n2 + " é " + resultSoma);
                     break;
+                case 2:
+                    Double resultSub = operacoes.subtrair(n1, n2);
+                    System.out.println("A subtração entre " + n1 + " e " + n2 + " é " + resultSub);
+                    break;
             }
         }
     }
