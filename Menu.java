@@ -29,6 +29,10 @@ public class Menu {
                     Double resultSub = operacoes.subtrair(n1, n2);
                     System.out.println("A subtração entre " + n1 + " e " + n2 + " é " + resultSub);
                     break;
+                case 3:
+                    Double resultMulti = operacoes.multiplicar(n1, n2);
+                    System.out.println("A multiplicação entre " + n1 + " e " + n2 + " é " + resultMulti);
+                    break;
             }
         }
     }
